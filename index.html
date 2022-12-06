@@ -13,31 +13,39 @@
 
 </head>
 <body>
-   <header class="bg-orange-100 h-96">
+   <header class="bg-orange-100 h-96 w-full">
     <section class="flex justify-around">
 
-         <!-- In this section is about the name of the company -->
-         <section class="m-3">
-           <div class="text-2xl"><span class="text-yellow-500">A&M</span> Fashion<div>
+             <!-- In this section is about the name of the company -->
+         <section>
+           <div class="text-2xl m-3 max-sm:pl-20">
+             <span class="text-yellow-500">A&M</span> Fashion
+           </div>
          </section>
-        <!-- In this section about nav  -->
-        <nav class="flex justify-between text-1xl">
-           <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="index.html">HOME</a></div>
-        <!-- added two file of casuale and formal shoes -->
-        <div class="m-3 hover:text-yellow-500 hover:scale-125">
-            <a href="products.html">PRODUCTS</a>
-        </div>
-           <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="">ABOUT US</a></div>
-           <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="contact-form.html">CONTACT</a></div>
+             <!-- In this section about nav  -->
+        <nav class="flex justify-end text-1xl pr-10">
+           <div class="m-3 hover:text-yellow-500 hover:scale-125">
+              <a href="index.html">HOME</a>
+           </div>
+           <!-- added two file of casuale and formal shoes -->
+           <div class="m-3 hover:text-yellow-500 hover:scale-125">
+              <a href="products.html">PRODUCTS</a>
+           </div>
+           <div class="m-3 hover:text-yellow-500 hover:scale-125 max-sm:hidden">
+              <a href="">ABOUT US</a>
+           </div>
+           <div class="m-3 hover:text-yellow-500 hover:scale-125">
+              <a href="contact-form.html">CONTACT</a>
+           </div>
         </nav>
 
     </section>
 
-    <section class="flex justify-around">
-        <div class="w-1/2 lg:pl-20 xl:pl-2 2xl:ml-80">
-            <img class="h-80" src="images/Group 33092.png" alt="">
+    <section class="flex justify-center">
+    <div class="w-1/2">
+            <img class="h-80 max-sm:h-72 lg:ml-32 xl:ml-64 2xl:ml-64 " src="images/Group 33092.png" alt="">
         </div>
-        <div class="w-1/2 pt-12">
+        <div class="w-1/2 pt-12 max-sm:pt-5">
          <h1 class="text-yellow-500 text-3xl">NIKE REACT</h1>
          <h1 class="text-2xl">INFINITY RUN 2</h1>
          <h3><strong>Material & care instructions</strong></h3>
@@ -45,7 +53,7 @@
          <p><strong>Inner Material:</strong> textile</p>
          <p><strong>Insole:</strong> Textile</p>
          <p><strong>Sole:</strong> Synthetic</p>
-         <p><strong>Padding Thickness:</strong> Cold Lined
+         <p class="max-sm:hidden"><strong>Padding Thickness:</strong> Cold Lined
          </p>
          <p><strong>Price:</strong>€120.00</p>
          <button class="text-base pr-3 pl-3 bg-amber-500 rounded-full text-white hover:bg-orange-600"><a href="">BUY NOW</a></button>

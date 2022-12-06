@@ -5,92 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <!-- link of Font AWESOME -->
+    <script src="https://kit.fontawesome.com/b7640e3b8f.js" crossorigin="anonymous"></script>
       <!-- Tailwind link  -->
       <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-orange-100">
-  <header class="bg-orange-100">
-    <section class="flex justify-around">
+<header>
+  <section class="flex justify-around">
 
-      <!-- In this section is about the name of the company -->
-      <section class="m-3">
-        <div class="text-2xl"><span class="text-yellow-500">A&M</span> Fashion<div>
-      </section>
-     <!-- In this section about nav  -->
-     <nav class="flex justify-between text-1xl">
-        <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="index.html">HOME</a></div>
-     <!-- added two file of casuale and formal shoes -->
-     <div class="m-3 hover:text-yellow-500 hover:scale-125">
-         <a href="products.html">PRODUCTS</a>
-     </div>
-        <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="about-us.html">ABOUT US</a></div>
-        <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="contact-form.html">CONTACT</a></div>
-     </nav>
+    <!-- In this section is about the name of the company -->
+<section>
+  <div class="text-2xl m-3 max-sm:pl-20">
+    <span class="text-yellow-500">A&M</span> Fashion
+  </div>
+</section>
+    <!-- In this section about nav  -->
+<nav class="flex justify-end text-1xl pr-10">
+  <div class="m-3 hover:text-yellow-500 hover:scale-125">
+     <a href="index.html">HOME</a>
+  </div>
+  <!-- added two file of casuale and formal shoes -->
+  <div class="m-3 hover:text-yellow-500 hover:scale-125">
+     <a href="products.html">PRODUCTS</a>
+  </div>
+  <div class="m-3 hover:text-yellow-500 hover:scale-125 max-sm:hidden">
+     <a href="">ABOUT US</a>
+  </div>
+  <div class="m-3 hover:text-yellow-500 hover:scale-125">
+     <a href="contact-form.html">CONTACT</a>
+  </div>
+</nav>
 
- </section>
- <section>
-  <h1 class="text-yellow-500 text-3xl text-center mb-4">CONTACT US</h1>
- </section>
-  </header>
-  <form action="" class="ml-96 pl-24 text-left">
-    <!-- first name -->
-   <div class="flex m-2"> 
-      <p class="w-40">
-        <label for="Fname" ><strong>First Name:</strong></label>
-      </p>
-     <p>
-      <input type="text" placeholder="First Name" class="w-80 border-2 border-solid border-orange-400">
-     </p>
-   </div>
-     <!-- Last Name  -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="Lname" class=><strong>Last Name:</strong></label>
-      </p>
-      <p>
-      <input type="text" placeholder="Last Name" class="w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Address -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="address"><strong>Address:</strong></label>
-      </p>
-      <p>
-        <input type="text" placeholder="Klopstockstr.1,45468 Mülheim an der Ruhr" class="w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Email  -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="Email"><strong>Email:</strong></label>
-      </p>
-      <p>
-        <input type="text" placeholder="abc@gmail.com" class="w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Mobile Number  -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="Mnumber"><strong>Mobile Number:</strong></label>
-      </p>
-      <p>
-        <input type="number" placeholder="015906146341" class=" w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Message  -->
-    <div class="m-2">
-       <p class="w-40">
-        <label for="message" class="block mb-4"><strong>Message:</strong></label>
-       </p>
-      <p>
-        <input type="text" placeholder="message" class="w-80 h-64 border-2 border-solid border-orange-400">
-      </p>
-      <p><button class="bg-orange-500 rounded-full pl-3 pr-3 text-white mt-4">Submit</button></p>
-    </div>
+</section>
+</header>
+  <div class="flex w-full min-h-screen justify-center items-center">
+    <div class="flex flex-col space-y-6 bg-orange-50 w-full max-w-4xl p-8 rounded-xl shadow-lg md:flex-row md:space-x-6 md:space-y-0 sm:p-12">
+      <div class="flex flex-col space-y-6 justify-between">
+        <div>
+          <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
+          <p class="pt-2 text-sm">Please feel free to contact us. 
+            Our customer service team is always here to answer your queries.</p>
+        </div>
+        <div class="flex flex-col space-y-6">
+          <div class="inline-flex space-x-2 items-center">
+            <i class="fa-solid fa-phone"></i>
+          <span> +(123) 456 8910</span></div>
+        
+        <div class="inline-flex space-x-2 items-center">
+          <i class="fa-solid fa-envelope"></i>
+        <span> contact@gmail.com</span></div>
     
-
-
-  </form>
+      <div class="inline-flex space-x-2 items-center">
+        <i class="fa-solid fa-location-dot"></i>
+      <span> 56 London, United Kingdom</span></div>
+      </div>
+        <div class="flex space-x-4">
+         <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+         <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+         <a href="#"><i class="fa-brands fa-square-twitter"></i></a> 
+        </div>
+      </div>
+        <div class="bg-white rounded-xl shadow-lg p-8 md:w-80">
+          <form action="" class="flex flex-col space-y-4">
+            <div>
+              <label for="Fname" class="text-sm">Full Name:</label>
+              <input type="text" placeholder="Full Name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-orange-100">
+            </div>
+            <div>
+              <label for="Email" class="text-sm">Full Name:</label>
+              <input type="email" placeholder="E.mail Address" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-orange-100">
+            </div>
+            <div>
+              <label for="Message" class="text-sm">Message:</label>
+              <textarea placeholder="Message" rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-orange-100"></textarea>
+            </div>
+            <button class="inline-block self-end bg-orange-100 font-bold rounded-lg px-6 py-2 uppercase text-sm hover:bg-amber-500">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
